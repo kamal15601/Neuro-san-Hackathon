@@ -1,0 +1,27 @@
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=7410)
+[ProcessLogBridgePlugin] Initialized (PID=7410)
+Manifest file /home/ec2-user/neuro-san-hackathon/registries/registries/manifest.hocon did not exist or was essentially empty.
+Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.617381", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Starting 1 worker processes (worker_id=0, pid=7410)", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.621222", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8090 with backlog 128", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.622929", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623036", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 904238 requests", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623081", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623121", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623161", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['/home/ec2-user/neuro-san-hackathon/registries/registries/manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623197", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Failed to start StorageWatcher: [Errno 2] No such file or directory: '/home/ec2-user/neuro-san-hackathon/registries/registries'", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623430", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.623518", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.624272", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.625239", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.625549", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.626152", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer started on port 8081", "user_id": "None", "Timestamp": "2026-09-05T15:14:51.626859", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Cleaning up plugin: ProcessLogBridgePlugin Plugin", "user_id": "None", "Timestamp": "2026-09-05T15:15:09.107211", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[ProcessLogBridgePlugin] Cleaning up", "user_id": "None", "Timestamp": "2026-09-05T15:15:09.107360", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[ProcessLogBridgePlugin] Cleanup complete", "user_id": "None", "Timestamp": "2026-09-05T15:15:09.107401", "source": "HttpServer", "message_type": "Other", "request_id": "None"}

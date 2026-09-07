@@ -1,0 +1,294 @@
+{
+    # ============================================================
+    # Decommission Readiness Agent (DRA) — Enhanced Network v2
+    # Cognizant AI Lab Agentic AI Hackathon (Track 2: Neuro SAN Studio)
+    # ============================================================
+    #
+    # Workflow (6 agents):
+    #   1. IntakeResolverAgent   - normalizes + fuzzy-resolves the input
+    #                              to a canonical ticket_id + server
+    #   2. TicketLookupAgent     - approvals / status
+    #   3. CommScannerAgent      - scream-test + objections
+    #   4. RiskAnalyzerAgent     - weighted technical risk score
+    #   5. ReadinessEvaluatorAgent - deterministic GO / CONDITIONAL-GO /
+    #                                NO-GO verdict + confidence (eval loop)
+    #   6. ActionRecommenderAgent - ordered remediation plan + audit trail
+    #
+    # All data is synthetic (data/*.json). No real/PII data — compliant
+    # with hackathon data rules.
+
+    "llm_config": {
+        "model_name": "bedrock-claude-haiku"
+    },
+
+    "tools": [
+
+        # ---------- FRONT MAN ----------------------------------------
+        {
+            "name": "DecommissionReadinessAgent",
+            "function": {
+                "description": "Determines whether a server is ready to be decommissioned by resolving the input, checking change-ticket approvals, scream-test objections, and technical dependencies, then producing a GO / CONDITIONAL-GO / NO-GO verdict with a remediation plan.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "server_or_ticket": {
+                            "type": "string",
+                            "description": "Server hostname (e.g. APP-DB-042) or change ticket id (e.g. CHG0012345). Minor typos are tolerated."
+                        }
+                    },
+                    "required": ["server_or_ticket"]
+                }
+            },
+            "instructions": """
+                You are the front-man orchestrator of a Decommission Readiness
+                system. Follow this exact plan and do NOT skip steps:
+
+                STEP 1 - RESOLVE: Call IntakeResolverAgent with the user's input.
+                  If it returns resolved=false, tell the user the input could not
+                  be matched, show the resolution_notes, and STOP. Never fabricate.
+                  Otherwise remember the canonical ticket_id and server it returns.
+
+                STEP 2 - INVESTIGATE (gather ALL evidence before judging):
+                  a) Call TicketLookupAgent with the resolved ticket_id.
+                  b) Call CommScannerAgent with the resolved server.
+                  c) Call RiskAnalyzerAgent with the resolved server.
+                  Always perform all three, even if one already looks negative.
+
+                STEP 3 - EVALUATE: Call ReadinessEvaluatorAgent passing EXACTLY:
+                  required_approvers, approvals_received (from step 2a),
+                  has_unresolved_objections (from step 2b),
+                  outstanding_risks and risk_score (from step 2c).
+
+                STEP 4 - RECOMMEND: Call ActionRecommenderAgent passing the
+                  verdict and blockers from step 3.
+
+                STEP 5 - REPORT: Present a clear, structured final answer:
+                  - Server + ticket + business criticality
+                  - VERDICT (GO / CONDITIONAL-GO / NO-GO) and confidence
+                  - The specific evidence behind it (which approver is missing,
+                    which objection, which dependency + risk score)
+                  - The ordered remediation plan with owners
+                  If the evaluator reports evidence_complete=false, explicitly
+                  warn the user that the verdict is based on incomplete evidence.
+
+                Be precise and cite concrete facts; never invent servers,
+                approvers, or verdicts that the tools did not return.
+            """,
+            "tools": ["IntakeResolverAgent", "TicketLookupAgent", "CommScannerAgent", "RiskAnalyzerAgent", "ReadinessEvaluatorAgent", "ActionRecommenderAgent"]
+        },
+
+        # ---------- 1. INTAKE / RESOLVER -----------------------------
+        {
+            "name": "IntakeResolverAgent",
+            "function": {
+                "description": "Normalizes and fuzzy-resolves a raw identifier into a canonical ticket_id and server name.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "identifier": {"type": "string", "description": "Raw server name or ticket id from the user."}
+                    },
+                    "required": ["identifier"]
+                }
+            },
+            "instructions": """
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            """,
+            "tools": ["intake_resolver_tool"]
+        },
+
+        # ---------- 2. TICKET LOOKUP ---------------------------------
+        {
+            "name": "TicketLookupAgent",
+            "function": {
+                "description": "Looks up change-ticket approval status.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "ticket_id": {"type": "string"},
+                        "server": {"type": "string"}
+                    }
+                }
+            },
+            "instructions": """
+                Use ticket_lookup_tool with the given ticket_id (or server).
+                Return the full result verbatim, especially required_approvers,
+                approvals_received, missing_approvals, all_approvals_received,
+                and business_criticality.
+            """,
+            "tools": ["ticket_lookup_tool"]
+        },
+
+        # ---------- 3. COMM SCANNER ----------------------------------
+        {
+            "name": "CommScannerAgent",
+            "function": {
+                "description": "Checks scream-test communication and objections for a server.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "server": {"type": "string"}
+                    },
+                    "required": ["server"]
+                }
+            },
+            "instructions": """
+                Use comm_scanner_tool with the given server. Return the full
+                result verbatim, especially has_unresolved_objections,
+                scream_test_sent, and scream_test_window_elapsed.
+            """,
+            "tools": ["comm_scanner_tool"]
+        },
+
+        # ---------- 4. RISK ANALYZER ---------------------------------
+        {
+            "name": "RiskAnalyzerAgent",
+            "function": {
+                "description": "Computes weighted technical dependency risk for a server.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "server": {"type": "string"}
+                    },
+                    "required": ["server"]
+                }
+            },
+            "instructions": """
+                Use risk_analyzer_tool with the given server. Return the full
+                result verbatim, especially outstanding_risks, risk_score,
+                risk_band, and is_clean.
+            """,
+            "tools": ["risk_analyzer_tool"]
+        },
+
+        # ---------- 5. READINESS EVALUATOR (eval loop) ---------------
+        {
+            "name": "ReadinessEvaluatorAgent",
+            "function": {
+                "description": "Applies the deterministic readiness checklist and returns a GO / CONDITIONAL-GO / NO-GO verdict with confidence.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "required_approvers": {"type": "array", "items": {"type": "string"}},
+                        "approvals_received": {"type": "array", "items": {"type": "string"}},
+                        "has_unresolved_objections": {"type": "boolean"},
+                        "outstanding_risks": {"type": "array", "items": {"type": "string"}},
+                        "risk_score": {"type": "integer"}
+                    },
+                    "required": ["required_approvers", "approvals_received", "has_unresolved_objections", "outstanding_risks"]
+                }
+            },
+            "instructions": """
+                Use readiness_evaluator_tool with exactly the arguments you were
+                given. Return verdict, confidence, checklist, blockers,
+                evidence_complete, missing_evidence, and summary verbatim.
+                Do not override the tool's verdict with your own opinion.
+            """,
+            "tools": ["readiness_evaluator_tool"]
+        },
+
+        # ---------- 6. ACTION RECOMMENDER ----------------------------
+        {
+            "name": "ActionRecommenderAgent",
+            "function": {
+                "description": "Turns a verdict + blockers into an ordered remediation plan with owners.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "verdict": {"type": "string"},
+                        "blockers": {"type": "array", "items": {"type": "string"}}
+                    },
+                    "required": ["verdict", "blockers"]
+                }
+            },
+            "instructions": """
+                Use action_recommender_tool with the given verdict and blockers.
+                Return next_actions_summary and the remediation_plan verbatim.
+            """,
+            "tools": ["action_recommender_tool"]
+        },
+
+        # ============ CODED TOOLS ====================================
+        {
+            "name": "intake_resolver_tool",
+            "class": "intake_resolver.IntakeResolverTool",
+            "function": {
+                "description": "Resolve a raw identifier to canonical ticket_id + server (with fuzzy matching).",
+                "parameters": {
+                    "type": "object",
+                    "properties": {"identifier": {"type": "string"}},
+                    "required": ["identifier"]
+                }
+            }
+        },
+        {
+            "name": "ticket_lookup_tool",
+            "class": "ticket_lookup.TicketLookupTool",
+            "function": {
+                "description": "Look up a change ticket's approval status.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {"ticket_id": {"type": "string"}, "server": {"type": "string"}}
+                }
+            }
+        },
+        {
+            "name": "comm_scanner_tool",
+            "class": "comm_scanner.CommScannerTool",
+            "function": {
+                "description": "Check scream-test communication status for a server.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {"server": {"type": "string"}},
+                    "required": ["server"]
+                }
+            }
+        },
+        {
+            "name": "risk_analyzer_tool",
+            "class": "risk_analyzer.RiskAnalyzerTool",
+            "function": {
+                "description": "Compute weighted technical dependency risk for a server.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {"server": {"type": "string"}},
+                    "required": ["server"]
+                }
+            }
+        },
+        {
+            "name": "readiness_evaluator_tool",
+            "class": "readiness_evaluator.ReadinessEvaluatorTool",
+            "function": {
+                "description": "Run the deterministic readiness checklist and return a verdict + confidence.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "required_approvers": {"type": "array", "items": {"type": "string"}},
+                        "approvals_received": {"type": "array", "items": {"type": "string"}},
+                        "has_unresolved_objections": {"type": "boolean"},
+                        "outstanding_risks": {"type": "array", "items": {"type": "string"}},
+                        "risk_score": {"type": "integer"}
+                    },
+                    "required": ["required_approvers", "approvals_received", "has_unresolved_objections", "outstanding_risks"]
+                }
+            }
+        },
+        {
+            "name": "action_recommender_tool",
+            "class": "action_recommender.ActionRecommenderTool",
+            "function": {
+                "description": "Turn a verdict + blockers into an ordered remediation plan.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "verdict": {"type": "string"},
+                        "blockers": {"type": "array", "items": {"type": "string"}}
+                    },
+                    "required": ["verdict", "blockers"]
+                }
+            }
+        }
+    ]
+}

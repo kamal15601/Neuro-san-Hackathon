@@ -1,0 +1,260 @@
+2026-09-04 19:43:18 IST | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-04 19:43:18 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['/home/ec2-user/neuro-san-hackathon']
+2026-09-04 19:43:18 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+2026-09-04 19:43:18 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [2697] using StatReload
+2026-09-04 19:43:28 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-04 19:43:28 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:43:28 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:43:28 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=2701)
+2026-09-04 19:43:28 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=2701)
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:300: SyntaxWarning: invalid escape sequence '\('
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - m = re.match('([su]([0-9]{1,2})p?) \(([0-9]{1,2}) bit\)$', token)
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:301: SyntaxWarning: invalid escape sequence '\('
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - m2 = re.match('([su]([0-9]{1,2})p?)( \(default\))?$', token)
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:310: SyntaxWarning: invalid escape sequence '\('
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow -   elif re.match('(flt)p?( \(default\))?$', token):
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:314: SyntaxWarning: invalid escape sequence '\('
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow -   elif re.match('(dbl)p?( \(default\))?$', token):
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-04 19:43:28 IST | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - frontend_dist_path: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - Serving frontend from: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [2705]
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - FastAPI is starting up...
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:43:31 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-04 19:43:31 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Manifest file /home/ec2-user/neuro-san-hackathon/registries/manifest.hocon restored in 5.60 seconds.
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent music_nerd to allowed http service list
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent music_nerd (4638 bytes): 281472895873008
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Cleaning up plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:43:33 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 88, in _run_code
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 101, in <module>
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     wrapper.run()
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 92, in run
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     ServerMainLoop().main_loop()
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/main_loop/server_main_loop.py", line 339, in main_loop
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     self.http_server.start(components_to_start)
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/http/server/http_server.py", line 201, in start
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sockets = tornado.netutil.bind_sockets(
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/tornado/netutil.py", line 162, in bind_sockets
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sock.bind(sockaddr)
+2026-09-04 19:43:33 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - OSError: [Errno 98] Address already in use
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:43:33 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:45:32 IST | INFO     | NeuroSanRunner:signal_handler:295 - Running cleanup for plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:45:32 IST | INFO     | ProcessLogBridgePlugin:cleanup:87 - [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:45:32 IST | INFO     | ProcessLogBridgePlugin:cleanup:89 - [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:46:54 IST | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-04 19:46:54 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['/home/ec2-user/neuro-san-hackathon']
+2026-09-04 19:46:54 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+2026-09-04 19:46:54 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [2828] using StatReload
+2026-09-04 19:46:59 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-04 19:46:59 IST | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-04 19:46:59 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-04 19:46:59 IST | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-04 19:47:00 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-04 19:47:00 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:47:00 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:47:00 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=2832)
+2026-09-04 19:47:00 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=2832)
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - frontend_dist_path: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - Serving frontend from: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [2836]
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - FastAPI is starting up...
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:47:00 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-04 19:47:00 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent music_nerd to allowed http service list
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent music_nerd (4638 bytes): 281472487424272
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Cleaning up plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:47:04 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 88, in _run_code
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 101, in <module>
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     wrapper.run()
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 92, in run
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     ServerMainLoop().main_loop()
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/main_loop/server_main_loop.py", line 339, in main_loop
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     self.http_server.start(components_to_start)
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/http/server/http_server.py", line 201, in start
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sockets = tornado.netutil.bind_sockets(
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/tornado/netutil.py", line 162, in bind_sockets
+2026-09-04 19:47:04 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sock.bind(sockaddr)
+2026-09-04 19:47:04 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - OSError: [Errno 98] Address already in use
+2026-09-04 19:47:10 IST | INFO     | NeuroSanRunner:signal_handler:295 - Running cleanup for plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:47:10 IST | INFO     | ProcessLogBridgePlugin:cleanup:87 - [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:47:10 IST | INFO     | ProcessLogBridgePlugin:cleanup:89 - [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:49:50 IST | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-04 19:49:50 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['/home/ec2-user/neuro-san-hackathon']
+2026-09-04 19:49:50 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:8090 (Press CTRL+C to quit)
+2026-09-04 19:49:50 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [2898] using StatReload
+2026-09-04 19:49:56 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-04 19:49:56 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:49:56 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:49:56 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=2901)
+2026-09-04 19:49:56 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=2901)
+2026-09-04 19:49:56 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-04 19:49:56 IST | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-04 19:49:56 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-04 19:49:56 IST | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - frontend_dist_path: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - Serving frontend from: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [2905]
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - FastAPI is starting up...
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - [Startup] Default NsConfig set to http://localhost:8090
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:49:57 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-04 19:49:57 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Manifest file /home/ec2-user/neuro-san-hackathon/registries/manifest.hocon restored in 5.38 seconds.
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+2026-09-04 19:50:01 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 88, in _run_code
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 101, in <module>
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     wrapper.run()
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 92, in run
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     ServerMainLoop().main_loop()
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent music_nerd to allowed http service list
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent music_nerd (4638 bytes): 281472932124944
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Cleaning up plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/main_loop/server_main_loop.py", line 339, in main_loop
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     self.http_server.start(components_to_start)
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/http/server/http_server.py", line 201, in start
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sockets = tornado.netutil.bind_sockets(
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/tornado/netutil.py", line 162, in bind_sockets
+2026-09-04 19:50:01 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sock.bind(sockaddr)
+2026-09-04 19:50:01 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - OSError: [Errno 98] Address already in use
+2026-09-04 19:50:16 IST | INFO     | NeuroSanRunner:signal_handler:295 - Running cleanup for plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:50:16 IST | INFO     | ProcessLogBridgePlugin:cleanup:87 - [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:50:16 IST | INFO     | ProcessLogBridgePlugin:cleanup:89 - [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:53:38 IST | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-04 19:53:38 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['/home/ec2-user/neuro-san-hackathon']
+2026-09-04 19:53:38 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:8090 (Press CTRL+C to quit)
+2026-09-04 19:53:39 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [2952] using StatReload
+2026-09-04 19:53:44 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-04 19:53:44 IST | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-04 19:53:44 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-04 19:53:44 IST | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-04 19:53:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-04 19:53:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:53:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:53:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=2955)
+2026-09-04 19:53:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=2955)
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - frontend_dist_path: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - Serving frontend from: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [2959]
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - FastAPI is starting up...
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - [Startup] Default NsConfig set to http://localhost:8090
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:53:45 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-04 19:53:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent music_nerd to allowed http service list
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent music_nerd (4638 bytes): 281472872837680
+2026-09-04 19:53:49 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Cleaning up plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "<frozen runpy>", line 88, in _run_code
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 101, in <module>
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     wrapper.run()
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san_studio/runner/neuro_san_server_wrapper.py", line 92, in run
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     ServerMainLoop().main_loop()
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/main_loop/server_main_loop.py", line 339, in main_loop
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     self.http_server.start(components_to_start)
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/neuro_san/service/http/server/http_server.py", line 201, in start
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sockets = tornado.netutil.bind_sockets(
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -   File "/home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/tornado/netutil.py", line 162, in bind_sockets
+2026-09-04 19:53:49 IST | INFO     | NeuroSan:_log:823 - NeuroSan -     sock.bind(sockaddr)
+2026-09-04 19:53:49 IST | ERROR    | NeuroSan:_log:819 - NeuroSan - OSError: [Errno 98] Address already in use
+2026-09-04 19:54:49 IST | INFO     | NeuroSanRunner:signal_handler:295 - Running cleanup for plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:54:49 IST | INFO     | ProcessLogBridgePlugin:cleanup:87 - [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 19:54:49 IST | INFO     | ProcessLogBridgePlugin:cleanup:89 - [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 19:55:38 IST | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-04 19:55:38 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['/home/ec2-user/neuro-san-hackathon']
+2026-09-04 19:55:38 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:8091 (Press CTRL+C to quit)
+2026-09-04 19:55:38 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [3008] using StatReload
+2026-09-04 19:55:44 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-04 19:55:44 IST | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-04 19:55:44 IST | INFO     | nsflow:_log:823 - nsflow - /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-04 19:55:44 IST | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-04 19:55:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-04 19:55:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:55:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 19:55:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=3011)
+2026-09-04 19:55:44 IST | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=3011)
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - frontend_dist_path: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - Serving frontend from: /home/ec2-user/neuro-san-hackathon/.venv/lib64/python3.12/site-packages/nsflow/prebuilt_frontend/dist
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [3015]
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - FastAPI is starting up...
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - [Startup] Default NsConfig set to http://localhost:8090
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - 2026-09-04 19:55:45 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-04 19:55:45 IST | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Manifest file /home/ec2-user/neuro-san-hackathon/registries/manifest.hocon restored in 5.87 seconds.
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan - Reading /home/ec2-user/neuro-san-hackathon/.venv/lib/python3.12/site-packages/neuro_san/deploy/logging.hocon
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.12.12.  PYTHON_GIL=unset
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent music_nerd to allowed http service list
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent music_nerd (4638 bytes): 281473094221904
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting 1 worker processes (worker_id=0, pid=3011)
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server is running 1 instances on port 8090 with backlog 128
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server idle connections timeout: 3600 seconds
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server is shutting down after 1083596 requests
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: MCP server is running protocol 2025-06-18
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting StorageWatcher with 5 seconds period
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting RegistryStorageUpdater for ['/home/ec2-user/neuro-san-hackathon/registries/manifest.hocon'] with 5 seconds period
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Registry polling watchdog started on: /home/ec2-user/neuro-san-hackathon/registries for manifest ['/home/ec2-user/neuro-san-hackathon/registries/manifest.hocon'] with polling every 1 sec
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting TempNetworkStorageUpdater
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Waiting for new queues to be added for processing
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting EventWorkMonitor with 0.500000 seconds period
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting PeriodicEventInitiator with 1.000000 seconds period
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Found 0 periodic agent interactions
+2026-09-04 19:55:50 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HealthProbeServer started on port 8081
+2026-09-04 20:07:19 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Cleaning up plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 20:07:19 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 20:07:19 IST | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [ProcessLogBridgePlugin] Cleanup complete
+2026-09-04 20:07:19 IST | INFO     | NeuroSanRunner:signal_handler:295 - Running cleanup for plugin: ProcessLogBridgePlugin Plugin
+2026-09-04 20:07:19 IST | INFO     | ProcessLogBridgePlugin:cleanup:87 - [ProcessLogBridgePlugin] Cleaning up
+2026-09-04 20:07:19 IST | INFO     | ProcessLogBridgePlugin:cleanup:89 - [ProcessLogBridgePlugin] Cleanup complete

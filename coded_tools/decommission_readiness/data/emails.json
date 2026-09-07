@@ -1,0 +1,36 @@
+{
+  "APP-DB-042": {
+    "scream_test_sent": true,
+    "scream_test_sent_date": "2026-08-20",
+    "scream_test_window_days": 10,
+    "objections_received": [],
+    "notes": "No objections received during the 10-day scream test window."
+  },
+  "WEB-FE-017": {
+    "scream_test_sent": true,
+    "scream_test_sent_date": "2026-08-12",
+    "scream_test_window_days": 10,
+    "objections_received": [
+      {
+        "from": "App Support Team",
+        "date": "2026-08-15",
+        "message": "This server still hosts a legacy reporting dashboard used monthly. Please hold decommission."
+      }
+    ],
+    "notes": "Objection received and unresolved."
+  },
+  "BATCH-JOB-009": {
+    "scream_test_sent": false,
+    "scream_test_sent_date": null,
+    "scream_test_window_days": 10,
+    "objections_received": [],
+    "notes": "Scream test email has not been sent yet."
+  },
+  "TEST-SRV-999": {
+    "scream_test_sent": true,
+    "scream_test_sent_date": "2026-08-26",
+    "scream_test_window_days": 10,
+    "objections_received": [],
+    "notes": "No objections received."
+  }
+}

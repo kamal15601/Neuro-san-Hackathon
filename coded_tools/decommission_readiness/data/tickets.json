@@ -1,0 +1,46 @@
+{
+  "CHG0012345": {
+    "server": "APP-DB-042",
+    "change_type": "Decommission",
+    "status": "Pending Approval",
+    "required_approvers": ["Unix Team Lead", "DBA Team Lead", "Network Team Lead"],
+    "approvals_received": ["Unix Team Lead", "Network Team Lead"],
+    "created_date": "2026-08-15",
+    "scheduled_decommission_date": "2026-09-10",
+    "business_criticality": "High",
+    "notes": "Waiting on DBA sign-off before proceeding."
+  },
+  "CHG0012400": {
+    "server": "WEB-FE-017",
+    "change_type": "Decommission",
+    "status": "Approved",
+    "required_approvers": ["Unix Team Lead", "Network Team Lead"],
+    "approvals_received": ["Unix Team Lead", "Network Team Lead"],
+    "created_date": "2026-08-10",
+    "scheduled_decommission_date": "2026-09-05",
+    "business_criticality": "Medium",
+    "notes": "All approvals received. Ready for scream test verification."
+  },
+  "CHG0012410": {
+    "server": "BATCH-JOB-009",
+    "change_type": "Decommission",
+    "status": "Approved",
+    "required_approvers": ["Unix Team Lead"],
+    "approvals_received": ["Unix Team Lead"],
+    "created_date": "2026-08-20",
+    "scheduled_decommission_date": "2026-09-06",
+    "business_criticality": "Low",
+    "notes": "Low-risk batch server. Single approver required."
+  },
+  "CHG0012500": {
+    "server": "TEST-SRV-999",
+    "change_type": "Decommission",
+    "status": "Approved",
+    "required_approvers": ["Unix Team Lead"],
+    "approvals_received": ["Unix Team Lead"],
+    "created_date": "2026-08-25",
+    "scheduled_decommission_date": "2026-09-07",
+    "business_criticality": "Low",
+    "notes": "Fully approved sandbox test server, all clean end-to-end."
+  }
+}

@@ -1,0 +1,871 @@
+Agent: DecommissionReadinessAgent.IntakeResolverAgent
+
+[SYSTEM] @ 2026-09-05 14:21:22:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 14:21:22:
+The identifier is 'CHG0012345'.
+
+[AGENT] @ 2026-09-05 14:21:23:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012345"
+    }
+}
+```
+
+[AI] @ 2026-09-05 14:21:26:
+The `intake_resolver_tool` encountered an error and could not be executed:
+
+Could not find class "IntakeResolverTool" in module "decommission_readiness.intake_resolver" under AGENT_TOOL_PATH "coded_tools" for the agent called "intake_resolver_tool" in the agent network "decommission_readiness".
+
+As a result, the identifier 'CHG0012345' could not be resolved, and the requested fields (resolved, ticket_id, server, and resolution_notes) are unavailable.
+
+[AGENT] @ 2026-09-05 14:21:26:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 618,
+    "empty_responses": 0,
+    "prompt_tokens": 628,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 3.878571033477783,
+    "total_cost": 0.0021680000000000002,
+    "total_tokens": 1246
+}
+```
+
+[SYSTEM] @ 2026-09-05 14:58:42:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 14:58:42:
+The identifier is 'CHG0012345'.
+
+[AGENT] @ 2026-09-05 14:58:43:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012345"
+    }
+}
+```
+
+[AI] @ 2026-09-05 14:58:43:
+I'm sorry, but I encountered an internal error while trying to process your request. Please try again later.
+
+[AGENT] @ 2026-09-05 14:58:43:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 50,
+    "empty_responses": 0,
+    "prompt_tokens": 583,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.4779746532440186,
+    "total_cost": 0.00044150000000000005,
+    "total_tokens": 633
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:15:40:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:15:40:
+The identifier is 'CHG0012345'.
+
+[AGENT] @ 2026-09-05 15:15:43:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012345"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:15:43:
+
+
+[AGENT] @ 2026-09-05 15:15:43:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 26,
+    "empty_responses": 1,
+    "prompt_tokens": 576,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 3.2342169284820557,
+    "total_cost": 6.8e-05,
+    "total_tokens": 602
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:16:30:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:16:30:
+The identifier is 'CHG0012345'.
+
+[AGENT] @ 2026-09-05 15:16:30:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012345"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:16:31:
+
+
+[AGENT] @ 2026-09-05 15:16:31:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 26,
+    "empty_responses": 1,
+    "prompt_tokens": 576,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 0.6475100517272949,
+    "total_cost": 6.8e-05,
+    "total_tokens": 602
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:17:48:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:17:48:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 15:17:48:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:17:49:
+
+
+[AGENT] @ 2026-09-05 15:17:49:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 26,
+    "empty_responses": 1,
+    "prompt_tokens": 576,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 0.9057056903839111,
+    "total_cost": 6.8e-05,
+    "total_tokens": 602
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:26:31:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:26:31:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 15:26:31:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:26:33:
+Could not find class "IntakeResolverTool"
+in module "intake_resolver"
+under AGENT_TOOL_PATH "coded_tools"
+for the agent called "intake_resolver_tool"
+in the agent network "decommission_readiness".
+
+Check these things:
+1.  Is there a typo in your AGENT_TOOL_PATH?
+2.  Expected to find a specific CodedTool for the given agent network in:
+    <AGENT_TOOL_PATH>/<agent_network>/<coded_tool_name>.py
+    Global CodedTools (shared across networks) should be located at:
+    <AGENT_TOOL_PATH>/<coded_tool_name>.py
+    a)  Does your AGENT_TOOL_PATH point to the correct directory?
+    b)  Does your CodedTool actually live in a module appropriately
+        named for your agent network?
+    c)  Does the module in the "class" designation for the agent intake_resolver_tool
+        match what is in the filesystem?
+    d)  Does the specified class name match what is actually implemented in the file?
+    e)  If an agent network contains both specific and global CodedTools,
+        the global module must not have the same name as the agent network.
+3. Is AGENT_TOOL_PATH findable from what is set for your PYTHONPATH?
+
+[AGENT] @ 2026-09-05 15:26:33:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 451,
+    "empty_responses": 0,
+    "prompt_tokens": 637,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 2.4961323738098145,
+    "total_cost": 0.002169,
+    "total_tokens": 1088
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:32:30:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:32:30:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 15:32:38:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:32:41:
+Could not find class "IntakeResolverTool"
+in module "intake_resolver"
+under AGENT_TOOL_PATH "coded_tools"
+for the agent called "intake_resolver_tool"
+in the agent network "decommission_readiness".
+
+Check these things:
+1.  Is there a typo in your AGENT_TOOL_PATH?
+2.  Expected to find a specific CodedTool for the given agent network in:
+    <AGENT_TOOL_PATH>/<agent_network>/<coded_tool_name>.py
+    Global CodedTools (shared across networks) should be located at:
+    <AGENT_TOOL_PATH>/<coded_tool_name>.py
+    a)  Does your AGENT_TOOL_PATH point to the correct directory?
+    b)  Does your CodedTool actually live in a module appropriately
+        named for your agent network?
+    c)  Does the module in the "class" designation for the agent intake_resolver_tool
+        match what is in the filesystem?
+    d)  Does the specified class name match what is actually implemented in the file?
+    e)  If an agent network contains both specific and global CodedTools,
+        the global module must not have the same name as the agent network.
+3. Is AGENT_TOOL_PATH findable from what is set for your PYTHONPATH?
+
+[AGENT] @ 2026-09-05 15:32:41:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 471,
+    "empty_responses": 0,
+    "prompt_tokens": 673,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 11.4904203414917,
+    "total_cost": 0.002271,
+    "total_tokens": 1144
+}
+```
+
+[SYSTEM] @ 2026-09-05 15:50:52:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 15:50:52:
+The identifier is 'CHG0012500''.
+
+[AGENT] @ 2026-09-05 15:50:55:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500'"
+    }
+}
+```
+
+[AI] @ 2026-09-05 15:50:57:
+Could not find class "IntakeResolverTool"
+in module "intake_resolver"
+under AGENT_TOOL_PATH "coded_tools"
+for the agent called "intake_resolver_tool"
+in the agent network "decommission_readiness".
+
+Check these things:
+1.  Is there a typo in your AGENT_TOOL_PATH?
+2.  Expected to find a specific CodedTool for the given agent network in:
+    <AGENT_TOOL_PATH>/<agent_network>/<coded_tool_name>.py
+    Global CodedTools (shared across networks) should be located at:
+    <AGENT_TOOL_PATH>/<coded_tool_name>.py
+    a)  Does your AGENT_TOOL_PATH point to the correct directory?
+    b)  Does your CodedTool actually live in a module appropriately
+        named for your agent network?
+    c)  Does the module in the "class" designation for the agent intake_resolver_tool
+        match what is in the filesystem?
+    d)  Does the specified class name match what is actually implemented in the file?
+    e)  If an agent network contains both specific and global CodedTools,
+        the global module must not have the same name as the agent network.
+3. Is AGENT_TOOL_PATH findable from what is set for your PYTHONPATH?
+
+[AGENT] @ 2026-09-05 15:50:57:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 906,
+    "empty_responses": 0,
+    "prompt_tokens": 1092,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 4.307161331176758,
+    "total_cost": 0.0042165,
+    "total_tokens": 1998
+}
+```
+
+[SYSTEM] @ 2026-09-05 16:22:52:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 16:22:52:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 16:22:53:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AI] @ 2026-09-05 16:22:54:
+I apologize, but I'm encountering a technical error when trying to resolve the identifier 'CHG0012500'. The intake_resolver_tool is not properly configured in the system. The error indicates that the tool's implementation is missing or misconfigured.
+
+This appears to be a system configuration issue rather than a problem with your request. You may need to:
+- Contact your system administrator to verify the tool setup
+- Check that the intake_resolver_tool is properly installed and configured
+- Retry your request once the tool has been fixed
+
+Is there anything else I can help you with?
+
+[AGENT] @ 2026-09-05 16:22:54:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 189,
+    "empty_responses": 0,
+    "prompt_tokens": 1655,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 2.289461612701416,
+    "total_cost": 0.0,
+    "total_tokens": 1844
+}
+```
+
+[SYSTEM] @ 2026-09-05 16:23:17:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 16:23:17:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 16:23:18:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AI] @ 2026-09-05 16:23:20:
+I apologize, but I encountered a technical error when attempting to resolve the identifier 'CHG0012500'. The intake resolver tool is not properly configured in the system. 
+
+The error indicates there's a configuration issue with the tool's implementation rather than a problem with the identifier itself. To get this resolved, the system administrator would need to verify:
+
+1. The correct path configuration for the intake resolver tool
+2. That the CodedTool module is properly named and located
+3. That the class name matches the implementation
+
+Unfortunately, I cannot provide the resolution details (resolved status, ticket_id, server, and resolution_notes) at this time due to this technical issue.
+
+[AGENT] @ 2026-09-05 16:23:20:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 206,
+    "empty_responses": 0,
+    "prompt_tokens": 1655,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 2.5827155113220215,
+    "total_cost": 0.0,
+    "total_tokens": 1861
+}
+```
+
+[SYSTEM] @ 2026-09-05 16:32:12:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-05 16:32:12:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-05 16:32:12:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-05 16:32:12:
+{'input': 'CHG0012500', 'resolved': True, 'ticket_id': 'CHG0012500', 'server': 'TEST-SRV-999', 'resolution_notes': []}
+
+[AI] @ 2026-09-05 16:32:13:
+The identifier 'CHG0012500' has been resolved successfully:
+
+- **Resolved**: True
+- **Ticket ID**: CHG0012500
+- **Server**: TEST-SRV-999
+- **Resolution Notes**: None
+
+[AGENT] @ 2026-09-05 16:32:13:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 116,
+    "empty_responses": 0,
+    "prompt_tokens": 1388,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.642327070236206,
+    "total_cost": 0.0,
+    "total_tokens": 1504
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:21:02:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:21:02:
+The identifier is 'CHG0012410'.
+
+[AGENT] @ 2026-09-07 10:21:03:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012410"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:21:03:
+{'input': 'CHG0012410', 'resolved': True, 'ticket_id': 'CHG0012410', 'server': 'BATCH-JOB-009', 'resolution_notes': []}
+
+[AI] @ 2026-09-07 10:21:04:
+The identifier 'CHG0012410' has been resolved successfully:
+
+- **Resolved:** True
+- **Ticket ID:** CHG0012410
+- **Server:** BATCH-JOB-009
+- **Resolution Notes:** None
+
+[AGENT] @ 2026-09-07 10:21:04:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 117,
+    "empty_responses": 0,
+    "prompt_tokens": 1389,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.7033414840698242,
+    "total_cost": 0.0,
+    "total_tokens": 1506
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:22:13:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:22:13:
+The identifier is 'CHG001241'.
+
+[AGENT] @ 2026-09-07 10:22:14:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG001241"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:22:14:
+{'input': 'CHG001241', 'resolved': True, 'ticket_id': 'CHG0012410', 'server': 'BATCH-JOB-009', 'resolution_notes': ["Interpreted 'CHG001241' as ticket 'CHG0012410' (fuzzy match)."]}
+
+[AI] @ 2026-09-07 10:22:15:
+Here are the results:
+
+- **Input:** CHG001241
+- **Resolved:** True
+- **Ticket ID:** CHG0012410
+- **Server:** BATCH-JOB-009
+- **Resolution Notes:** Interpreted 'CHG001241' as ticket 'CHG0012410' (fuzzy match).
+
+[AGENT] @ 2026-09-07 10:22:15:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 138,
+    "empty_responses": 0,
+    "prompt_tokens": 1410,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.9529411792755127,
+    "total_cost": 0.0,
+    "total_tokens": 1548
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:23:27:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:23:27:
+The identifier is 'CHG0045247'.
+
+[AGENT] @ 2026-09-07 10:23:28:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0045247"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:23:28:
+{'input': 'CHG0045247', 'resolved': True, 'ticket_id': 'CHG0012410', 'server': 'BATCH-JOB-009', 'resolution_notes': ["Interpreted 'CHG0045247' as ticket 'CHG0012410' (fuzzy match)."]}
+
+[AI] @ 2026-09-07 10:23:29:
+Here are the results:
+
+- **Input:** CHG0045247
+- **Resolved:** True
+- **Ticket ID:** CHG0012410
+- **Server:** BATCH-JOB-009
+- **Resolution Notes:** Interpreted 'CHG0045247' as ticket 'CHG0012410' (fuzzy match).
+
+The identifier was resolved to ticket **CHG0012410** on server **BATCH-JOB-009** through fuzzy matching.
+
+[AGENT] @ 2026-09-07 10:23:29:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 172,
+    "empty_responses": 0,
+    "prompt_tokens": 1415,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 2.629775285720825,
+    "total_cost": 0.0,
+    "total_tokens": 1587
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:26:25:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:26:25:
+The identifier is 'CHG0012410'.
+
+[AGENT] @ 2026-09-07 10:26:26:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012410"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:26:26:
+{'input': 'CHG0012410', 'resolved': True, 'ticket_id': 'CHG0012410', 'server': 'BATCH-JOB-009', 'resolution_notes': []}
+
+[AI] @ 2026-09-07 10:26:27:
+Here is the resolution result for the identifier 'CHG0012410':
+
+- **Resolved**: True
+- **Ticket ID**: CHG0012410
+- **Server**: BATCH-JOB-009
+- **Resolution Notes**: (none)
+
+[AGENT] @ 2026-09-07 10:26:27:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 120,
+    "empty_responses": 0,
+    "prompt_tokens": 1389,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.8080792427062988,
+    "total_cost": 0.0,
+    "total_tokens": 1509
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:52:21:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:52:21:
+The identifier is 'CHG0012345'.
+
+[AGENT] @ 2026-09-07 10:52:22:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012345"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:52:22:
+{'input': 'CHG0012345', 'resolved': True, 'ticket_id': 'CHG0012345', 'server': 'APP-DB-042', 'resolution_notes': []}
+
+[AI] @ 2026-09-07 10:52:23:
+The identifier 'CHG0012345' has been successfully resolved:
+
+- **Resolved**: True
+- **Ticket ID**: CHG0012345
+- **Server**: APP-DB-042
+- **Resolution Notes**: None
+
+[AGENT] @ 2026-09-07 10:52:23:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 114,
+    "empty_responses": 0,
+    "prompt_tokens": 1386,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.5543336868286133,
+    "total_cost": 0.0,
+    "total_tokens": 1500
+}
+```
+
+[SYSTEM] @ 2026-09-07 10:53:07:
+
+                Use intake_resolver_tool with the given identifier. Return its
+                result verbatim, including resolved, ticket_id, server, and
+                resolution_notes. Do not guess values the tool did not provide.
+            
+
+[HUMAN] @ 2026-09-07 10:53:07:
+The identifier is 'CHG0012500'.
+
+[AGENT] @ 2026-09-07 10:53:08:
+Invoking: `intake_resolver_tool` with:
+```json
+{
+    "invoked_agent_name": "intake_resolver_tool",
+    "invoking_start": true,
+    "params": {
+        "identifier": "CHG0012500"
+    }
+}
+```
+
+[AGENT_TOOL_RESULT (result from intake_resolver_tool)] @ 2026-09-07 10:53:08:
+{'input': 'CHG0012500', 'resolved': True, 'ticket_id': 'CHG0012500', 'server': 'TEST-SRV-999', 'resolution_notes': []}
+
+[AI] @ 2026-09-07 10:53:08:
+The identifier has been successfully resolved:
+
+- **Resolved**: True
+- **Ticket ID**: CHG0012500
+- **Server**: TEST-SRV-999
+- **Resolution Notes**: None
+
+[AGENT] @ 2026-09-07 10:53:08:
+```json
+{
+    "caveats": [
+        "Token usage is tracked at the agent level. Counts include usage from any downstream agents called on this agent's behalf.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 108,
+    "empty_responses": 0,
+    "prompt_tokens": 1388,
+    "successful_requests": 2,
+    "time_taken_in_seconds": 1.5494451522827148,
+    "total_cost": 0.0,
+    "total_tokens": 1496
+}
+```
