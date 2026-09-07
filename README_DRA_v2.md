@@ -137,5 +137,3 @@ ServiceNow API (tickets), Microsoft Graph / Exchange (scream-test emails),
 and a CMDB / monitoring API (dependencies). The agent logic, scoring, and
 evaluation loop stay identical — only the data source changes.
 
-## Don't forget
-⭐ Star https://github.com/cognizant-ai-lab/neuro-san-studio before submitting.
